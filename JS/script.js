@@ -29,5 +29,5 @@ function changeSlide(slideIndex) {
 
 setInterval(function(){
     changeSlide(slideIndex);
-}, 1000);
+}, 5000);
 
