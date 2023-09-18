@@ -1,0 +1,443 @@
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css");
+
+
+* {
+    font-family: "Poppins", sans-serif;
+    padding: 0;
+    margin: 0;
+    font-size: 16px;
+}
+
+body {
+    font-family: "Poppins", sans-serif;
+    font-size: 16px;
+    background-color: #F8F3DF; 
+
+  }
+
+header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+
+}
+
+nav {
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    background-color:#af7746ed;
+    letter-spacing: 1px;
+    padding: 1vh 1vw 1vh 1vw;
+    width: 100%;
+}
+
+ul{
+    display: flex;
+    gap: 5vw;
+    list-style: none;
+    }
+
+li a{
+    text-decoration: none;
+    color: white;
+
+}
+.gian {
+    text-decoration: overline;
+}
+
+@media (min-width: 1100px) and (max-width: 1200px) {
+    li a{
+        font-size: 0.9em;
+    }
+}
+
+@media (max-width: 1099px) {
+    li a {
+        font-size: 0.8em;
+    }
+}
+
+@media (max-width: 850px) {
+    ul li {
+        display: none;
+    }
+    }
+
+
+h2 b{
+    color: white;
+    font-family: "dancing script", cursive;
+    font-size: 2em;
+    letter-spacing: 5px;
+}
+
+@media (min-width: 600px) and (max-width: 1100px) {
+    h2 b {
+        color: white;
+        font-size: 1.5em;
+        letter-spacing: 2px;
+        overflow: hidden;
+    }
+  }
+
+@media (min-width: 320px) and (max-width: 599px) {
+    h2 b {
+        color: white;
+        font-size: 1.2em;
+        letter-spacing: 1px;
+        overflow: hidden;
+    }
+  }
+
+button {
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    background-color: #AF7746;
+    border: none;
+}
+
+button i{
+    color: white;
+}
+
+@media (min-width: 850px) {
+    button {
+        display: none;
+
+    }
+  }
+
+@media (min-width: 600px) and (max-width: 849px) {
+    button i {
+        font-size: 1.5em;
+    }
+  }
+
+
+main {
+    display: block;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+    }
+
+
+.presentacion{
+    display: block;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+}
+
+
+ 
+.carousel{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    
+}
+
+.carousel ul li {
+    display: flex;
+    align-items: center;
+
+}
+img {
+    opacity: 0.9;
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    margin: 0;
+    overflow: hidden;
+
+}
+
+@media (max-width: 1000px) {
+    .img, .carousel{
+        overflow: hidden;
+    }
+}
+
+.titulo {
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 2vw 2vh;
+    margin: 2vw 2vh;
+}
+
+
+h1 b{
+    color: #1B1C2E;
+    font-family: "dancing script", cursive;
+    font-size: 3.5em;
+    letter-spacing: 2px;
+
+}
+
+@media (max-width: 1000px) {
+    h1 b{
+        text-align: center;
+        font-size: 2em;
+        margin: 1.5vw 1.5vh;
+        padding: 1.5vw 1.5vh;
+    }
+}
+
+@media (max-width: 500px) {
+    h1 b{
+        text-align: center;
+        font-size: 1.5em;
+        padding: 1%;
+        margin: 1%;
+    }
+}
+
+.jaguar1 {
+    border-radius: 50px;
+    width: 3em; 
+    height: 3em;
+}
+
+@media (max-width: 1000px){
+    .jaguar1 {
+        width: 2em; 
+        height: 2em;
+    }
+}
+
+@media (max-width: 500px){
+    .jaguar1 {
+        width: 1.5em; 
+        height: 1.5em;
+    }
+}
+
+p, p b{
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #1B1C2E;
+    font-family: "Poppins", sans-serif;
+    font-size: 1.25em;
+    font-style: normal;
+    padding: 2%;
+    margin: 2%;
+
+}
+
+@media (max-width: 1000px) {
+    p, p b{
+        font-size: 1em;
+        padding: 1.5%;
+        margin: 1.5%;
+    }
+}
+
+@media (max-width: 500px) {
+    p, p b{
+        font-size: 0.75em;
+        padding: 1%;
+        margin: 1%;
+    }
+}
+
+
+.servicios {
+    display: flex;
+    justify-content: space-between;
+    align-items: normal;
+    margin: 2vw 2vh;
+    padding: 2vw 2vh;
+
+
+}
+
+@media (max-width: 1200px) {
+    .servicios {
+        display: block;
+        align-items: center;
+        margin: 1.5vw 1.5vh;
+        padding: 1.5vw 1.5vh;
+    }
+}
+
+@media (max-width: 500px) {
+    .servicios {
+        display: block;
+        align-items: center;
+        margin: 1vw 1vh;
+        padding: 1vw 1vh;
+    }
+}
+
+.promocion {
+    display: block;
+    align-items: center;
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.783);
+    border: 2px solid #AF7746;
+    border-radius: 10px;
+    width: 35%;
+    margin: 1vw 1vh;
+    padding: 1vw 1vh;
+    overflow: hidden;
+}
+
+.promocion1 {
+    display: block;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 35%;
+    margin: 1vw 1vh;
+    padding: 1vw 1vh;
+    overflow: hidden;
+}
+
+@media (max-width: 1200px) {
+    .promocion, .promocion1 {
+        display: inline-block;
+        text-align: center;
+        width: 100%;
+        margin: 0.8vw 0.8vh;
+        padding: 0.8vw 0.8vh;
+        overflow: hidden;
+
+    }
+}
+
+@media (max-width: 500px) {
+    .promocion, .promocion1 {
+        display: inline-block;
+        text-align: center;
+        width: 100%;
+        margin: 0.5vw 0.5vh;
+        padding: 0.5vw 0.5vh;
+        overflow: hidden;
+
+    }
+}
+
+.jaguar2 {
+    background-color:#f5e7cd8a;
+    border-radius: 48px;
+    margin-bottom: 8vh;
+    width: 55%;
+    height: 50%;
+}
+
+h3 b, .subtit b {
+    color: #1B1C2E;
+    font-family: "dancing script", cursive;
+    font-size: 2em;
+    font-style: normal;
+    letter-spacing: 3px;
+    padding: 2vw 2vh;
+    margin: 2vw 2vw;
+}
+
+@media (max-width: 1000px) {
+    h3 b, .subtit b{ 
+        display: inline-block;
+        text-align: center;
+        font-size: 1.6em;
+        padding: 1.5vw 1.5vh;
+        margin: 1.5vw 1.5vw;
+    }
+}
+
+@media (max-width: 500px) {
+    h3 b, .subtit b{  
+        display: inline-block;
+        text-align: center;
+        font-size: 1.1em;
+        padding: 1vw 1vh;
+        margin: 1vw 1vw;
+    }
+}
+
+
+.parrafh3 {
+    text-align: start;
+    color: #1B1C2E;
+    font-family: "Poppins", sans-serif;
+    font-size: 1.25em;
+    font-style: normal;
+    padding: 2%;
+    margin: 2%;
+}
+
+@media (max-width: 1000px) {
+    .parrafh3 {
+        text-align: start;
+        font-size: 1em;
+        display: inline-block;
+        padding: 1%;
+        margin: 1%;
+    }
+}
+
+@media (max-width: 500px) {
+    .parrafh3 {
+        text-align: start;
+        font-size: 0.75em;
+        display: inline-block;
+        padding: 1%;
+        margin: 1%;
+    }
+}
+
+.presentacion1 {
+    display: block;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    justify-content: center;
+    padding: 2vw 2vh;
+    margin: 2vw 2vw;
+}
+
+.fotogian {
+    opacity: 0.9;
+    width: 40%;
+    height: 40%;
+    padding: 0;
+    margin: 0;
+    border-radius: 100px;
+    overflow: hidden;
+
+}
+
+@media (max-width: 1000px) {
+    .fotogian{
+        overflow: hidden;
+    }
+}
+
+
+ 
+
+
+
+
+
+  
+  
+
+
+
+
+
