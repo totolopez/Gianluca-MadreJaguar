@@ -19,7 +19,6 @@ header {
     display: flex;
     flex-direction: row;
     align-items: center;
-    margin: 0;
 
 
 }
@@ -30,9 +29,15 @@ nav {
     align-items: center;
     background-color:#af7746ed;
     letter-spacing: 1px;
-    padding: 1vh 1vw 1vh 1vw;
+    padding: 1vh 1vw;
     margin: 0;
     width: 100%;
+}
+
+@media (max-width: 850px) {
+    nav {
+        justify-content: space-between;
+    }
 }
 
 .jaguar1 {
@@ -62,7 +67,7 @@ h2 b{
     letter-spacing: 5px;
 }
 
-@media (min-width: 600px) and (max-width: 1100px) {
+@media  (max-width: 1100px) {
     h2 b {
         color: white;
         font-size: 1.5em;
@@ -71,7 +76,7 @@ h2 b{
     }
   }
 
-@media (min-width: 320px) and (max-width: 599px) {
+@media (max-width: 500px) {
     h2 b {
         color: white;
         font-size: 1.2em;
@@ -160,25 +165,47 @@ main {
     margin: 2vh 2vw;
 }
 
-h1 b{
+@media (max-width: 1000px) {
+    .titulo{
+        padding: 1.5vh 1.5vw;
+        margin: 1.5vh 1.5vw;;
 
+    }
+}
+
+@media (max-width: 600px) {
+    .titulo{
+        display: block;
+        padding: 1vh 1vw;
+        margin: 1vh 1vw;
+
+    }
+}
+
+h1 b{
     color: #1B1C2E;
     font-family: "dancing script", cursive;
     font-size: 3.5em;
     letter-spacing: 2px;
+    margin: 1vh 1vw;
+    padding: 1vh 1vw;
 
 }
 
 @media (max-width: 1000px) {
     h1 b{
-        font-size: 2em;
+        font-size: 3em;
+        margin: 1vh 1vw;
+        padding: 1vh 1vw;
 
     }
 }
 
 @media (max-width: 500px) {
     h1 b{
-        font-size: 1.5em;
+        font-size: 2.5em;
+        margin: 1vh 1vw;
+        padding: 1vh 1vw;
 
     }
 }
@@ -187,11 +214,15 @@ h1 b{
     color: #1B1C2E;
     font-family: "Poppins", sans-serif;
     font-size: 1.5em;
+    margin: 1vh 1vw;
+    padding: 1vh 1vw;
 }
 
 @media (max-width: 1000px) {
     .parrafh1 b{
         font-size: 1.2em;
+        margin: 1vh 1vw;
+        padding: 1vh 1vw;
 
     }
 }
@@ -199,6 +230,8 @@ h1 b{
 @media (max-width: 500px) {
     .parrafh1 b{
         font-size: 1em;
+        margin: 1vh 1vw;
+        padding: 1vh 1vw;
 
     }
 }
@@ -215,35 +248,32 @@ h1 b{
 
 .carousel{
     display: flex;
-    overflow: hidden;
     width: 300%;
     height: 100%;
-    position: relative;
     
 }
 
 .slider {
+    margin-left: 4.5vw;
     width: calc(100%/3);
     height: 100%;
-
-
 }
 
 
 .slider img {
-    justify-content: center;
-    width: 1000px;
-    height: 600px;
+    width: 1200px;
+    height: 750px;
     border-radius: 20px;
     opacity: 0.87;
     object-fit: cover;    
+    top: 15%;
 
 }
 
  .container button {
     align-items: center;
     position: absolute;
-    background-color: white;
+    background-color: transparent;
     opacity: 0.3;
     border-radius: 30px;
     border: none;
@@ -252,17 +282,17 @@ h1 b{
 }
 
 .btn-right {
-    right: 15px;
+    right: 25px;
 }
 .btn-left {
-    left: 15px;
+    left: 25px;
 }
 
 .bi-caret-left, .bi-caret-right {
     font-size: 1.5em;
     padding: 1px;
     cursor: pointer;
-    color:#AF7746; 
+    color:#1B1C2E; 
     transform: translate(0,-50%);
     transition: .5s ease;
 }
