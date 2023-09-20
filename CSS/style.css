@@ -19,6 +19,7 @@ header {
     display: flex;
     flex-direction: row;
     align-items: center;
+    margin: 0;
 
 
 }
@@ -30,8 +31,54 @@ nav {
     background-color:#af7746ed;
     letter-spacing: 1px;
     padding: 1vh 1vw 1vh 1vw;
+    margin: 0;
     width: 100%;
 }
+
+.jaguar1 {
+    border-radius: 50px;
+    width: 3em; 
+    height: 3em;
+}
+
+@media (max-width: 1000px){
+    .jaguar1 {
+        width: 2em; 
+        height: 2em;
+    }
+}
+
+@media (max-width: 500px){
+    .jaguar1 {
+        width: 1.5em; 
+        height: 1.5em;
+    }
+}
+
+h2 b{
+    color: white;
+    font-family: "dancing script", cursive;
+    font-size: 2em;
+    letter-spacing: 5px;
+}
+
+@media (min-width: 600px) and (max-width: 1100px) {
+    h2 b {
+        color: white;
+        font-size: 1.5em;
+        letter-spacing: 2px;
+        overflow: hidden;
+    }
+  }
+
+@media (min-width: 320px) and (max-width: 599px) {
+    h2 b {
+        color: white;
+        font-size: 1.2em;
+        letter-spacing: 1px;
+        overflow: hidden;
+    }
+  }
 
 ul{
     display: flex;
@@ -66,56 +113,34 @@ li a{
     }
     }
 
-
-h2 b{
-    color: white;
-    font-family: "dancing script", cursive;
-    font-size: 2em;
-    letter-spacing: 5px;
-}
-
-@media (min-width: 600px) and (max-width: 1100px) {
-    h2 b {
-        color: white;
-        font-size: 1.5em;
-        letter-spacing: 2px;
-        overflow: hidden;
-    }
-  }
-
-@media (min-width: 320px) and (max-width: 599px) {
-    h2 b {
-        color: white;
-        font-size: 1.2em;
-        letter-spacing: 1px;
-        overflow: hidden;
-    }
-  }
-
-button {
+.btn-nav {
     display: flex;
     align-items: center;
     justify-content: end;
-    background-color: #AF7746;
     border: none;
 }
 
-button i{
-    color: white;
-}
-
 @media (min-width: 850px) {
-    button {
+    .btn-nav {
         display: none;
 
     }
   }
 
-@media (min-width: 600px) and (max-width: 849px) {
-    button i {
+@media (max-width: 849px) {
+    .bi-menu-down {
         font-size: 1.5em;
+        background-color: #af7746ed;
+        color: white;
     }
   }
+
+@media (max-width: 500px) {
+    .bi-menu-down {
+    font-size: 1em;
+    }
+}
+
 
 
 main {
@@ -126,60 +151,17 @@ main {
     margin: 0;
     }
 
-
-.presentacion{
-    display: block;
+.titulo {
+    display: flex;
+    justify-content: space-around;
     align-items: center;
     text-align: center;
-    justify-content: center;
-    width: 100%;
-    padding: 0;
-    margin: 0;
+    padding: 2vh 2vw;
+    margin: 2vh 2vw;
 }
-
-
- 
-.carousel{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    padding: 0;
-    margin: 0;
-    
-}
-
-.carousel ul li {
-    display: flex;
-    align-items: center;
-
-}
-img {
-    opacity: 0.9;
-    width: 100%;
-    height: 100%;
-    padding: 0;
-    margin: 0;
-    overflow: hidden;
-
-}
-
-@media (max-width: 1000px) {
-    .img, .carousel{
-        overflow: hidden;
-    }
-}
-
-.titulo {
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    padding: 2vw 2vh;
-    margin: 2vw 2vh;
-}
-
 
 h1 b{
+
     color: #1B1C2E;
     font-family: "dancing script", cursive;
     font-size: 3.5em;
@@ -189,68 +171,133 @@ h1 b{
 
 @media (max-width: 1000px) {
     h1 b{
-        text-align: center;
         font-size: 2em;
-        margin: 1.5vw 1.5vh;
-        padding: 1.5vw 1.5vh;
+
     }
 }
 
 @media (max-width: 500px) {
     h1 b{
-        text-align: center;
         font-size: 1.5em;
-        padding: 1%;
-        margin: 1%;
+
     }
 }
 
-.jaguar1 {
-    border-radius: 50px;
-    width: 3em; 
-    height: 3em;
-}
-
-@media (max-width: 1000px){
-    .jaguar1 {
-        width: 2em; 
-        height: 2em;
-    }
-}
-
-@media (max-width: 500px){
-    .jaguar1 {
-        width: 1.5em; 
-        height: 1.5em;
-    }
-}
-
-p, p b{
-    justify-content: center;
-    align-items: center;
-    text-align: center;
+.parrafh1 b{
     color: #1B1C2E;
     font-family: "Poppins", sans-serif;
-    font-size: 1.25em;
-    font-style: normal;
-    padding: 2%;
-    margin: 2%;
-
+    font-size: 1.5em;
 }
 
 @media (max-width: 1000px) {
-    p, p b{
-        font-size: 1em;
-        padding: 1.5%;
-        margin: 1.5%;
+    .parrafh1 b{
+        font-size: 1.2em;
+
     }
 }
 
 @media (max-width: 500px) {
-    p, p b{
-        font-size: 0.75em;
-        padding: 1%;
-        margin: 1%;
+    .parrafh1 b{
+        font-size: 1em;
+
+    }
+}
+
+.container{
+    position: relative;
+    width: 100%;
+    height: 700px;
+    margin: 0;
+    padding: 0;
+
+}
+
+.carousel{
+    display: flex;
+    width: 300%;
+    height: 100%;
+    position: relative;
+    overflow: hidden;
+    
+}
+
+.slider {
+    width: calc(100%/3);
+    height: 100%;
+    overflow: hidden;
+
+}
+
+
+.slider img {
+    width: 100%;
+    height: 100%;
+    opacity: 0.87;
+    object-fit: cover;    
+
+}
+
+ .container button {
+    align-items: center;
+    position: absolute;
+    background-color: white;
+    opacity: 0.3;
+    border-radius: 30px;
+    border: none;
+    top: 50%;
+
+}
+
+.btn-right {
+    right: 15px;
+}
+.btn-left {
+    left: 15px;
+}
+
+.bi-caret-left, .bi-caret-right {
+    font-size: 1.5em;
+    padding: 1px;
+    cursor: pointer;
+    color:#AF7746; 
+    transform: translate(0,-50%);
+    transition: .5s ease;
+}
+
+.quiensoy{
+    display: block;
+    justify-content: center;
+    align-items: center;
+    padding: 2vw 2vh;
+    margin: 2vw 2vw;
+
+}
+
+.presentacion {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 3em;
+}
+
+.parrafimg {
+    color: #1B1C2E;
+    font-family: "Poppins", sans-serif;
+    font-size: 1.25em;
+
+}
+
+.fotogian {
+    opacity: 0.9;
+    width: 500px;
+    height: 500px;
+    border-radius: 100px;
+
+}
+
+@media (max-width: 1000px) {
+    .fotogian{
+        overflow: hidden;
     }
 }
 
@@ -400,32 +447,7 @@ h3 b, .subtit b {
     }
 }
 
-.presentacion1 {
-    display: block;
-    align-items: center;
-    text-align: center;
-    width: 100%;
-    justify-content: center;
-    padding: 2vw 2vh;
-    margin: 2vw 2vw;
-}
 
-.fotogian {
-    opacity: 0.9;
-    width: 40%;
-    height: 40%;
-    padding: 0;
-    margin: 0;
-    border-radius: 100px;
-    overflow: hidden;
-
-}
-
-@media (max-width: 1000px) {
-    .fotogian{
-        overflow: hidden;
-    }
-}
 
 
  
