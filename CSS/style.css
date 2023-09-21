@@ -34,29 +34,25 @@ nav {
     width: 100%;
 }
 
-@media (max-width: 850px) {
-    nav {
-        justify-content: space-between;
-    }
-}
 
 .jaguar1 {
+    justify-content: start;
     border-radius: 50px;
-    width: 3em; 
-    height: 3em;
+    width: 2em; 
+    height: 2em;
 }
 
 @media (max-width: 1000px){
     .jaguar1 {
-        width: 2em; 
-        height: 2em;
+        width: 1.6em; 
+        height: 1.6em;
     }
 }
 
 @media (max-width: 500px){
     .jaguar1 {
-        width: 1.5em; 
-        height: 1.5em;
+        width: 1.3em; 
+        height: 1.3em;
     }
 }
 
@@ -65,28 +61,32 @@ h2 b{
     font-family: "dancing script", cursive;
     font-size: 2em;
     letter-spacing: 5px;
+    margin-right: 8vw;
 }
 
-@media  (max-width: 1100px) {
+@media  (max-width: 1000px) {
     h2 b {
         color: white;
         font-size: 1.5em;
         letter-spacing: 2px;
-        overflow: hidden;
+        margin-right: 5vw;
+
     }
   }
+
 
 @media (max-width: 500px) {
     h2 b {
         color: white;
         font-size: 1.2em;
         letter-spacing: 1px;
-        overflow: hidden;
+        margin: 0;
     }
   }
 
 ul{
     display: flex;
+    align-items: center;
     gap: 5vw;
     list-style: none;
     }
@@ -142,11 +142,11 @@ li a{
 
 @media (max-width: 500px) {
     .bi-menu-down {
-    font-size: 1em;
+        font-size: 1.2em;
     }
 }
 
-
+/* -------------------------------------- Cuerpo de la pagina ----------------------------------------- */
 
 main {
     display: block;
@@ -236,6 +236,8 @@ h1 b{
     }
 }
 
+/* ----------------------- CARRUSEL ------------------------ */
+
 .container{
     position: relative;
     overflow: hidden;
@@ -297,6 +299,8 @@ h1 b{
     transition: .5s ease;
 }
 
+/* ------------------------- PRESENTACION GIANLUCA--------------------- */
+
 .quiensoy{
     display: block;
     justify-content: center;
@@ -309,31 +313,91 @@ h1 b{
 .presentacion {
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    align-items: start;
     gap: 3em;
+    padding: 1vw 2vh;
+    margin: 1vw 2vh;
 }
+
+@media (max-width: 1000px) {
+    .presentacion {
+        display: block;
+        justify-content: center;
+        align-items: center;
+        padding: .75vw 1.75vh;
+        margin: .75vw 1.75vh;
+
+    }
+}
+
+@media (max-width: 500px) {
+    .presentacion {
+        display: block;
+        justify-content: center;
+        align-items: center;
+        padding: .5vw 1.5vh;
+        margin: .5vw 1.5vh;
+
+    }
+}
+
+
 
 .parrafimg {
     color: #1B1C2E;
     font-family: "Poppins", sans-serif;
+    text-align: start;
     font-size: 1.25em;
+    padding: 1vw 1vh;
+    margin: 1vw 1vw;
+}
 
+@media (max-width: 1000px) {
+    .parrafimg {
+        text-align: start;
+        font-size: 1em;
+        padding: 0.75vw 0.75vh;
+        margin: 0.75vw 0.75vw;
+    }
+}
+
+@media (max-width: 500px) {
+    .parrafimg {
+        text-align: start;
+        font-size: 0.75em;
+        padding: 0.5vw 0.5vh;
+        margin: 0.5vw 0.5vw;
+    }
 }
 
 .fotogian {
     opacity: 0.9;
-    width: 500px;
-    height: 500px;
+    width: 400px;
+    height: 400px;
     border-radius: 100px;
-
+    padding: 1vw 1vh;
+    margin: 1vw 1vw;
 }
 
 @media (max-width: 1000px) {
     .fotogian{
-        overflow: hidden;
+        width: 300px;
+        height: 300px;
+        padding: 0.75vw 0.75vh;
+        margin: 0.75vw 0.75vw;
     }
 }
 
+@media (max-width: 500px) {
+    .fotogian {
+        width: 200px;
+        height: 200px;
+        padding: 0.5vw 0.5vh;
+        margin: 0.5vw 0.5vw;
+    }
+}
+
+/* ---------------------------- SERVICIOS ------------------------- */
 
 .servicios {
     display: flex;
