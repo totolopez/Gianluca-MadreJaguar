@@ -1,7 +1,7 @@
 # Titulo
 Madre Jaguar
 ## Descripción general
-Sito informativo y descriptivo para acercar nuevos usuarios.
+Sitio informativo y descriptivo para acercar nuevos usuarios.
 ## Tecnologías utilizadas
 HTML - CSS - JavaScript
 ## Recursos adicionales
