@@ -13,7 +13,7 @@
     --body-font-color:  #26100B;
     --nav-bg-color: #591902ed;
     --nav-font-color: white; 
-    --div-bg-color: #f7f3d6d2;
+    --div-bg-color: #f7f3d693;
 }
 
 body {
@@ -59,8 +59,8 @@ nav {
 
 .jaguarnav {
     border-radius: 50px;
-    width: 2.3em; 
-    height: 2.3em;
+    width: 2.3rem; 
+    height: 2.3rem;
 }
 
 @media (max-width: 1000px){
@@ -79,7 +79,7 @@ nav {
 
 .h2nav{
     font-family: var(--font-familyh);
-    font-size: 2em;
+    font-size: 2rem;
     letter-spacing: .1em;
 }
 
@@ -155,7 +155,7 @@ nav {
 
 @media (max-width: 849px) {
     .bi-menu-down {
-        font-size: 1.5em;
+        font-size: 1.5rem;
     }
   }
 
@@ -270,7 +270,7 @@ main {
 }
 
 .bi-caret-left, .bi-caret-right {
-    font-size: 3.5em;
+    font-size: 3.5rem;
     cursor: pointer;
     color: var(--nav-font-color);
     transition: .5s ease;
@@ -339,7 +339,7 @@ main {
 h1 b{
     color: var(--body-font-color);
     font-family: "dancing script", cursive;
-    font-size: 1.5em;
+    font-size: 2.5rem;
     letter-spacing: 2px;
     margin: 1vh 1vw;
     padding: 1vh 1vw;
@@ -367,7 +367,7 @@ h1 b{
 .parrafh1 b{
     color: var(--body-font-color);
     font-family: "Poppins", sans-serif;
-    font-size: 1.2em;
+    font-size: 1.2rem;
     margin: 1vh 1vw;
     padding: 1vh 1vw;
 }
@@ -392,69 +392,34 @@ h1 b{
 
 /* ------------------------- PRESENTACION GIANLUCA--------------------- */
 
-.quiensoy{
+.presentacion{
     display: block;
     justify-content: center;
     align-items: center;
     padding: 2vw 2vh;
-    margin: 2vw 2vw;
-
+    margin: 2vw 2vh;
 }
 
-.presentacion {
+.gianluca {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
-    gap: 3em;
-    padding: 1vw 2vh;
-    margin: 1vw 2vh;
+    padding: 2vw 2vh;
+    margin: 2vw 2vh;
 }
 
 @media (max-width: 1000px) {
-    .presentacion {
-        display: block;
-        align-items: center;
-        padding: .75vw 1.75vh;
-        margin: .75vw 1.75vh;
-
+    .gianluca {
+        display: block;        
     }
 }
 
-@media (max-width: 500px) {
-    .presentacion {
-        display: block;
-        align-items: center;
-        padding: .5vw 1.5vh;
-        margin: .5vw 1.5vh;
-
-    }
-}
-
-.parrafimg {
-    color: #1B1C2E;
-    font-family: "Poppins", sans-serif;
-    text-align: start;
-    font-size: 1.25em;
+.divgian {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     padding: 1vw 1vh;
-    margin: 1vw 1vw;
-}
-
-@media (max-width: 1000px) {
-    .parrafimg {
-        text-align: start;
-        font-size: 1em;
-        padding: 0.75vw 0.75vh;
-        margin: 0.75vw 0.75vw;
-    }
-}
-
-@media (max-width: 500px) {
-    .parrafimg {
-        text-align: start;
-        font-size: 0.75em;
-        padding: 0.5vw 0.5vh;
-        margin: 0.5vw 0.5vw;
-    }
+    margin: 1vw 1vh;
 }
 
 .fotogian {
@@ -463,27 +428,41 @@ h1 b{
     width: 400px;
     height: 400px;
     border-radius: 100%;
-    margin: 1vw 1vw;
 }
 
 @media (max-width: 1000px) {
     .fotogian{
-        border-radius: 150px;
-        width: 300px;
-        height: 300px;
-        margin: 1vh 0.75vw 1vh 0.75vw;
+        width: 60%;
+        height: 60%;
+    }
+}
+
+.parrafgian {
+    color: var(--body-font-color);
+    font-family: var(--font-family);
+    text-align: start;
+    font-size: 1.25rem;
+    padding: 1vw 1vh;
+    margin: 1vw 1vh;
+}
+
+@media (max-width: 1000px) {
+    .parrafgian {
+        font-size: 1em;
+        text-align: center;
 
     }
 }
 
 @media (max-width: 500px) {
-    .fotogian {
-        border-radius: 100px;
-        width: 200px;
-        height: 200px;
-        margin: 1vh 0.75vw 1vh 0.75vw;
+    .parrafgian {
+        font-size: 0.75em;
     }
 }
+
+
+
+
 
 /* ---------------------------- SERVICIOS ------------------------- */
 
@@ -491,8 +470,9 @@ h1 b{
     display: block;
     justify-content: center;
     align-items: center;
-    margin: 1vw 1vh;
     padding: 1vw 1vh;
+    margin: 1vh 1vw;
+
 }
 
 .container-productos {
@@ -500,18 +480,21 @@ h1 b{
     justify-content: space-between;
     align-items: center;
     text-align: center;
+    width: auto;
+    height: 50vh;
     background-color: var(--div-bg-color);
     border: 2px solid var(--nav-bg-color);
     border-radius: 10px;
-    margin: 1vw 1vh;
-    height: auto;
+    margin: 5vh 3vw;
     padding: var(--padding-pag);
     overflow: hidden;
 }
 
-@media (max-width: 500px) {
+@media (max-width: 800px) {
     .container-productos {
         display: block;
+        height: 70vh;
+
     }
 }
 
@@ -519,14 +502,15 @@ h1 b{
     display: block;
     justify-content: center;
     align-items: center;
-    width: 70%;
 }
 
 .h3producto{
     color: var(--body-font-color);
     font-family: var(--font-familyh);
-    font-size: 1.7em;
+    font-size: 1.7rem;
     letter-spacing: 0.2em;
+    padding: 1vw 1vh;
+    margin: 1vw 1vw;
 
 }
 
@@ -542,14 +526,13 @@ h1 b{
     }
 }
 
-
 .parrafh3 {
     text-align: start;
     color: var(--body-font-color);
     font-family: var(--font-family);
-    font-size: 1em;
-    padding: 1.5vw 1.5vh;
-    margin: 1.5vw 1.5vw;
+    font-size: 1rem;
+    padding: 1vw 1vh;
+    margin: 1vw 1vw;
 }
 
 @media (max-width: 1000px) {
@@ -564,20 +547,29 @@ h1 b{
     }
 }
 
-.container-productos img {
-    padding: var(--padding-pag);
+.img-clases {
     margin: var(--margin-pag);
-    width: 30%;
+    width: 40%;
     height: 100%;
     object-fit: cover;
 }
 
-/* @media (max-width: 1200px) {
-    .container-productos img {
-        width: 40%;
-
+@media (max-width: 800px) {
+    .img-clases {
+        width: 100%;
+        height: 70%;
     }
-} */
+}
+
+@media (max-width: 500px) {
+    .img-clases {
+        width: 100%;
+        height: 80%;
+    }
+}
+
+
+
 
 /* ---------------------------------------------SECTION INFORMACION---------------------------                   */
 
